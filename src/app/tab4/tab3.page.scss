@@ -1,0 +1,290 @@
+@import "../../theme/core/core.scss";
+
+.home-header {
+    padding: 0;
+    height: 88px;
+    background: $color-gradual;
+
+    .toolbar-container {
+        opacity: 1 !important;
+    }
+
+    .toolbar {
+        // height: 141px;
+        // padding-top: 53px;
+        margin-top: 53px;
+        height: 27px;
+        --background: transparent;
+        --opacity: 1 !important;
+        --border-width: 0;
+        --color: white;
+        --padding-top: 0;
+        --min-height: 27px;
+
+        .toolbar-container {
+            margin-top: 20px;
+        }
+
+        .home-title {
+            --color: white;
+            opacity: 1;
+            font-size: 16px;
+            height: 27px;
+            line-height: 27px;
+            text-align: left;
+            font-weight: 400;
+            letter-spacing: 0.07px;
+            text-align: center;
+
+            :host {
+                padding-inline: 0 !important;
+            }
+
+            .icon-angle-down {
+
+                &:before {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .header-btns {
+            min-height: 27px;
+        }
+
+        .user-subtract {
+            --padding-end: 30px;
+        }
+
+        .icon-user-subtract-o {
+            font-size: 12px;
+            color: $color-white;
+            font-size: 24px;
+        }
+    }
+
+}
+
+.card-data {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -44vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 9999;
+    width: 88vw;
+    height: 122px;
+    border-radius: 24px;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 17px;
+
+    padding: 20px;
+
+    .item {
+        .label {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            justify-content: space-between;
+            line-height: 27px;
+
+            .num {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 27px;
+                letter-spacing: 0.2px;
+                color: $color-gs3;
+                text-align: left;
+            }
+
+            &:last-child {
+                margin-top: 6px;
+
+                .num {
+                    color: #008B75;
+                }
+            }
+
+            .unit {
+                font-size: 12px;
+                line-height: 27px;
+                text-align: right;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+}
+
+.content {
+    .uinfo {
+        margin-top: 32px;
+        margin: 30px auto 0 auto;
+        width: 344px;
+        height: 176px;
+        background: $color-gse;
+        opacity: 0.5;
+        border-radius: 16px;
+        text-align: center;
+
+        .icon-user-subtract-o {
+            display: inline-block;
+            margin: 28px auto 0 auto;
+            font-size: 64px;
+            color: #C4C4C4;
+        }
+
+        .title {
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: 0.06px;
+            font-weight: 400;
+        }
+
+        .name {
+            padding: 0;
+            margin: 5px 0 0 0;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0.18px;
+            font-weight: 700;
+        }
+    }
+
+    .account {
+        position: relative;
+        margin: 16px auto 16px auto;
+        width: 344px;
+        height: 55px;
+        line-height: 55px;
+        background: rgba(238, 238, 238, 0.5);
+        border-radius: 16px;
+
+        .label {
+            margin-left: 16px;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 0.07px;
+            color: $color-gs6;
+        }
+
+        .num {
+            position: absolute;
+            right: 16px;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.2px;
+            text-align: right;
+            color: #008B75;
+        }
+
+
+    }
+
+    .actions {
+        padding: 0 16px;
+        margin: 0 auto;
+        width: 344px;
+        height: 167px;
+        background: rgba(238, 238, 238, 0.5);
+        border-radius: 20px;
+
+        .action {
+            opacity: 1;
+            position: relative;
+            padding: 0;
+            height: 55px;
+            line-height: 55px;
+            border-bottom: 1px solid #EEEEEE;
+
+
+            .label {
+                display: inline-block;
+                font-size: 16px;
+                line-height: 55px;
+                font-weight: 500;
+                color: #666666;
+            }
+
+            .check {
+                margin-top: 12px;
+                display: inline-block;
+                height: 31px;
+                width: 51px;
+                position: absolute;
+                right: 16px;
+                overflow: hidden;
+                border-radius: 15px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .check__check {
+                z-index: 2;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .check__check:checked~.check__indicator {
+                background: #58A09B;
+            }
+
+            .check__check:checked~.check__indicator:after {
+                -webkit-transform: translate(10px, 0);
+                transform: translate(21px, 0);
+            }
+
+            .check__check,
+            .check__indicator {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+            }
+
+            .check__indicator {
+                background: rgba(238, 238, 238, 1);
+                transition: background 0.25s ease;
+            }
+
+            .check__indicator:after {
+                height: 27px;
+                width: 27px;
+                background: #fff;
+                content: '';
+                position: absolute;
+                border-radius: 100%;
+                top: 2px;
+                left: 2px;
+                transition: -webkit-transform 0.25s ease;
+                transition: transform 0.25s ease;
+                transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+            }
+
+        }
+    }
+
+    .tip {
+        color: #E20000;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+}
+
+#_finger_password {
+    z-index: 99999;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+}

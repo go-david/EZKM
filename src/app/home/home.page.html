@@ -1,0 +1,168 @@
+<!-- <ion-header [translucent]="true" class="home-header">
+  <ion-toolbar class="toolbar" color="">
+    <ion-title class="home-title">{{title}} <ion-icon class="icon-angle-down"></ion-icon>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-header class="home-header">
+  <ion-toolbar class="toolbar">
+    <ion-title class="home-title">{{title}} <ion-icon class="icon-angle-down"></ion-icon>
+    </ion-title>
+
+    <ion-buttons slot="end" class="header-btns">
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" class="user-subtract">
+        <ion-icon class="icon-user-subtract-o"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-card class="card-data">
+  <div class="item">
+    <div class="title">實際撥款</div>
+    <div class="label">
+      <span class="num">1040</span>
+      <span class="unit">(件數)</span>
+    </div>
+    <div class="label">
+      <span class="num">3,760,480</span>
+      <span class="unit">(千元)</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="title">已核未撥</div>
+    <div class="label">
+      <span class="num">110</span>
+      <span class="unit">(件數)</span>
+    </div>
+    <div class="label">
+      <span class="num">69020</span>
+      <span class="unit">(千元)</span>
+    </div>
+  </div>
+</ion-card>
+
+<ion-content [fullscreen]="true" class="content">
+  <!-- <ion-header class="home-header">
+    <ion-toolbar class="toolbar">
+      <ion-title size="large">{{title}}</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div class="nh">
+    <span class="kpi">業績</span>
+    <span class="separator"></span>
+    <span class="npv">NPV</span>
+    <span class="day-box">還可以努力 <span class="day">11</span> 個工作天</span>
+  </div>
+
+  <div class="progress">
+    <div class="svg">
+      <svg width="209px" height="198px" viewBox="0 0 209 198" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>未命名</title>
+        <defs>
+          <linearGradient x1="50%" y1="0%" x2="46.6038%" y2="99.8846667%" id="linearGradient-1">
+            <stop stop-color="#9AD898" offset="0%"></stop>
+            <stop stop-color="#62CBBA" offset="100%"></stop>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="46.6049676%" y2="99.8494624%" id="linearGradient-2">
+            <stop stop-color="#9AD898" offset="0%"></stop>
+            <stop stop-color="#62CBBA" offset="100%"></stop>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="46.6038095%" y2="99.8845238%" id="linearGradient-3">
+            <stop stop-color="#9AD898" offset="0%"></stop>
+            <stop stop-color="#62CBBA" offset="100%"></stop>
+          </linearGradient>
+          <linearGradient x1="9.48276316%" y1="19.8275789%" x2="79.3102632%" y2="89.6552632%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="编组-3" transform="translate(6.000000, 6.000000)">
+            <g id="Ellipse-11" transform="translate(24.000000, 18.000000)" fill="url(#linearGradient-1)"
+              fill-rule="nonzero" opacity="0.4">
+              <g id="编组">
+                <circle id="椭圆形" cx="75" cy="75" r="75"></circle>
+              </g>
+            </g>
+            <g id="Ellipse-15" transform="translate(30.000000, 24.000000)" fill="#27B69F" fill-rule="nonzero">
+              <circle id="椭圆形" cx="69" cy="69" r="69"></circle>
+            </g>
+            <g id="Ellipse-18" opacity="0.6" stroke="#EEEEEE" stroke-linecap="round" stroke-width="10">
+              <path
+                d="M50.2071,186 C20.2264,168.908 0,136.551 0,99.449 C0,44.5247 44.3238,0 99,0 C153.676,0 198,44.5247 198,99.449 C198,136.551 177.774,168.908 147.793,186"
+                id="路径"></path>
+            </g>
+            <g id="Ellipse-19" stroke="url(#linearGradient-2)" stroke-linecap="round" stroke-width="12">
+              <path
+                d="M50.2071,186 C20.2264,168.908 0,136.551 0,99.449 C0,44.5247 44.3238,0 99,0 C123.402,0 145.742,8.8686 163,23.5722"
+                id="路径"></path>
+            </g>
+            <g id="编组-2" transform="translate(147.000000, 3.000000)" fill-rule="nonzero">
+              <g id="Ellipse-14" fill="url(#linearGradient-3)">
+                <circle id="椭圆形" cx="21" cy="21" r="21"></circle>
+              </g>
+              <g id="Ellipse-16" transform="translate(2.000000, 2.000000)" fill="url(#linearGradient-4)">
+                <circle id="椭圆形" cx="19" cy="19" r="19"></circle>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <span class="text">( 達成率 )</span>
+      <span class="per">60%</span>
+      <span class="cext">
+        加權金額
+      </span>
+      <span class="ctext-2">2,230,950</span>
+      <span class="ctext-3">(千元)</span>
+    </div>
+  </div>
+
+  <div class="actions-2">
+    <div class="act">
+      <a href="/tabs/tab5">
+        <ion-icon class="icon icon-file-move-outline"></ion-icon>
+        <p class="text">我要進件</p>
+        <div class="r"></div>
+      </a>
+    </div>
+    <div class="act">
+      <ion-icon class="icon icon-file-move-outline"></ion-icon>
+      <p class="text">案件清單</p>
+      <div class="r"></div>
+    </div>
+    <div class="act">
+      <ion-icon class="icon icon-file-move-outline"></ion-icon>
+      <p class="text">我要撥款</p>
+      <div class="r"></div>
+    </div>
+  </div>
+
+  <div class="actions-3">
+    <div class="at">
+      <ion-icon class="icon icon-calculate"></ion-icon>
+      <p class="text">查試算</p>
+    </div>
+
+    <div class="at">
+      <ion-icon class="icon icon-calculate"></ion-icon>
+      <p class="text">查試算</p>
+    </div>
+    <div class="at">
+      <ion-icon class="icon icon-calculate"></ion-icon>
+      <p class="text">查試算</p>
+    </div>
+    <div class="at">
+      <ion-icon class="icon icon-calculate"></ion-icon>
+      <p class="text">查試算</p>
+    </div>
+
+  </div>
+
+
+
+</ion-content>

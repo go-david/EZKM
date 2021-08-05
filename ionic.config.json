@@ -1,0 +1,7 @@
+{
+  "name": "HRAPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

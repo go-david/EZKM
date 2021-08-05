@@ -1,0 +1,108 @@
+<ion-header class="home-header">
+  <ion-toolbar class="toolbar">
+    <ion-title class="home-title">设定</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content">
+  <div class="action-list">
+    <ion-item class="action-item">
+      <ion-icon class="icon icon-folder-open"></ion-icon>
+      <ion-label class="label">我的案件</ion-label>
+      <ion-icon class="icon-down icon-angle-down"></ion-icon>
+    </ion-item>
+    <ion-item class="action-item">
+      <ion-icon class="icon icon-chart-bar"></ion-icon>
+      <ion-label class="label">我的報表</ion-label>
+      <ion-icon class="icon-down icon-angle-down"></ion-icon>
+    </ion-item>
+    <ion-item-group>
+      <ion-item class="action-item" (click)="open = !open">
+        <ion-icon class="icon icon-chart-bar"></ion-icon>
+        <ion-label class="label">我的報表</ion-label>
+        <ion-icon *ngIf="open" class="icon-down icon-angle-up"></ion-icon>
+        <ion-icon *ngIf="!open" class="icon-down icon-angle-down"></ion-icon>
+      </ion-item>
+      <div class="child-list" *ngIf="open">
+        <ion-item class="down-item">
+          <ion-label>我要進件 </ion-label>
+        </ion-item>
+        <ion-item class="down-item">
+          <ion-label>案件清單</ion-label>
+        </ion-item>
+        <ion-item class="down-item">
+          <ion-label>我要撥款</ion-label>
+        </ion-item>
+        <ion-item class="down-item">
+          <ion-label>文件工具 </ion-label>
+        </ion-item>
+        <ion-item class="down-item">
+          <ion-label>大口申請</ion-label>
+        </ion-item>
+      </div>
+    </ion-item-group>
+
+
+  </div>
+
+  <div class="actions">
+    <div class="action">
+      <ion-icon class="icon icon-calculate"></ion-icon>
+      <div class="title">试算查询</div>
+      <div class="label">EZKM</div>
+    </div>
+    <div class="action">
+      <ion-icon class="icon icon-create"></ion-icon>
+      <div class="title">行動簽核</div>
+      <div class="label">EZKM</div>
+    </div>
+    <div class="action">
+      <ion-icon class="icon icon-person_search"></ion-icon>
+      <div class="title">保有查詢 </div>
+      <div class="label">EZKM</div>
+    </div>
+    <div class="action">
+      <ion-icon class="icon icon-build"></ion-icon>
+      <div class="title">業務工具</div>
+      <div class="label">EZKM</div>
+    </div>
+  </div>
+
+  <div class="notices">
+    <div class="notice-item">
+      <div class="c">
+        <div class="title">金機貸</div>
+        <div class="content">和潤金機貸為和潤企業開發提供給合作經銷商使用之案件進件App，提供合作經銷商進...</div>
+        <div class="date">2021/05/20 17:00</div>
+      </div>
+      <div class="dot"></div>
+      <ion-icon class="icon icon-angle-down"></ion-icon>
+    </div>
+
+    <div class="notice-item">
+      <div class="title">金機貸</div>
+      <div class="content">和潤金機貸為和潤企業開發提供給合作經銷商使用之案件進件App，提供合作經銷商進...</div>
+      <div class="date">2021/05/20 17:00</div>
+    </div>
+
+    <div class="notice-item">
+      <div class="c">
+        <div class="title">金機貸</div>
+        <div class="content">和潤金機貸為和潤企業開發提供給合作經銷商使用之案件進件App，提供合作經銷商進...</div>
+        <div class="date">2021/05/20 17:00</div>
+      </div>
+      <div class="checkbox"></div>
+      <ion-icon class="icon icon-angle-down"></ion-icon>
+    </div>
+    <div class="notice-item">
+      <div class="c">
+        <div class="title">金機貸</div>
+        <div class="content">和潤金機貸為和潤企業開發提供給合作經銷商使用之案件進件App，提供合作經銷商進...</div>
+        <div class="date">2021/05/20 17:00</div>
+      </div>
+      <div class="checkbox checked"></div>
+      <ion-icon class="icon icon-angle-down"></ion-icon>
+    </div>
+
+  </div>
+</ion-content>
